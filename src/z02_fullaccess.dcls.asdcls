@@ -1,0 +1,8 @@
+@EndUserText.label: 'Fullaccess_to_Z02_TEST'
+@MappingRole: true
+define role Z02_FULLACCESS {
+    grant select on Z_02_test
+           where(Fcarrierid) = aspect pfcg_auth( S_CARRID, CARRID, ACTVT = '03' );
+                   
+                        
+}
